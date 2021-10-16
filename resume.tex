@@ -38,8 +38,8 @@
 \def \phonetext {+1-407-443-5855}
 
 \def \emailicon {\faEnvelope}
-\def \emaillink {mailto:hpistor@stetson.edu}
-\def \emailtext {hpistor@stetson.edu}
+\def \emaillink {mailto:hpistor@fastmail.com}
+\def \emailtext {hpistor@fastmail.com}
 
 \def \githubicon {\faGithub}
 \def \githublink {https://github.com/hans-pistor}
@@ -187,12 +187,22 @@
 
   \resumeEntryStart
     \resumeEntryTSDL
-      {Stetson University}{October 2017 -- May 2020}
-      {Jr. Applications Developer [20 hrs/wk]}{Deland, Fl}
+      {JPMorgan Chase}{January 2021 - Current}
+      {Software Engineer}{Tampa, Fl}
     \resumeItemListStart
-      \resumeItem {Built and maintained Android application to provide 2FA for students and faculty using TOTP method to interface with main CAS system.}
-      \resumeItem {Built various websites and forms using Java Spring for faculty: Data Entry for admissions, Request forms for future IT tool development}
-      \resumeItem {Generally worked alone but all work was checked into git repo for review}
+      \resumeItem {Led a team in triaging defects in a distrbuted microsystems environment}
+      \resumeItem {Spearheaded PGP implementation for secure communication with external entities (Visa, Mastercard)}
+      \resumeItem{Implemented many features across multiple microservices that were designed in a reactive manner, using Kafka for message passing \& Project Reactor for reactive programming}
+    \resumeItemListEnd
+  \resumeEntryEnd
+
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {Stetson University}{October 2017 -- May 2020}
+      {Jr. Applications Developer }{Deland, Fl}
+    \resumeItemListStart
+      \resumeItem {Built and maintained Android application to provide 2FA for students and faculty using TOTP method to interface with CAS system.}
+      \resumeItem {Built various web forms using Java Spring MVC for faculty to resolve painpoints between departments (ex. Data Entry, Project Request)}
     \resumeItemListEnd
   \resumeEntryEnd
 
@@ -205,7 +215,8 @@
     \resumeEntryTD
       {Chupacabra}{Senior Research}
     \resumeItemListStart
-      \resumeItem {Developed a tool that generates networked Cyber Ranges with a known vulnerability lattice to aid teaching network security. Developed in Prolog \& Python}
+      \resumeItem{Given a list of vulnerabilities, developed a tool to generate a random network of systems that are vulnerable \& exploitable}
+      \resumeItem{This tool was developed to assist teaching cybersecurity to students as it allows you to generate random ranges with unknown vulnerabilities}
     \resumeItemListEnd
   \resumeEntryEnd
 
@@ -213,20 +224,10 @@
     \resumeEntryTD
       {Security Audit}{CINF 385}
     \resumeItemListStart
-    \resumeItem {Audited Stetson's network security, discovering two vectors of attack: exploitable 3rd party camera firmware allowing access to video feed and SQL injection leading to admin access to main WordPress website - used to run teacher and faculty sites.}
+    \resumeItem{Audited Stetson's network security, discovering two vectors of attack: exploitable 3rd party camera firmware allowing unauthenticated access to video feed and SQL injection leading to admin access to main WordPress website}
     \resumeItemListEnd
   \resumeEntryEnd
 
-
-  \resumeEntryStart
-    \resumeEntryTD
-      {Space Simulator}{CSCI 321}
-    \resumeItemListStart
-    \resumeItem {Built the back-end for a Space Simulator game where players
-    could create planets under various conditions and share them.}
-      \resumeItem {Integrated all the team's code together [ Visual, Math, Backend ] into the final product in Unreal Engine 4 using a mix of C++ and Blueprints}
-    \resumeItemListEnd
-  \resumeEntryEnd
 
 %-------------------------------------------------- EDUCATION --------------------------------------------------
 \section{\faGraduationCap}{Education}
@@ -240,8 +241,9 @@
 %-------------------------------------------------- PROGRAMMING SKILLS --------------------------------------------------
 \section{\faGears}{Skills}
  \resumeEntryStart
-  \resumeEntryS{Languages } {Java, Javascript, Python, Kotlin, Swift, Rust, SQL}
-  \resumeEntryS{Frameworks } {Django, Spring, SwiftUI, React}
+  \resumeEntryS{Languages} {Java, Python, Python, Kotlin, SQL}
+  \resumeEntryS{Frameworks} {SpringBoot, Django}
+  \resumeEntryS{Technologies}{Reactive Programming, Kafka}
  \resumeEntryEnd
  
  \section{\faGears}{Other}
@@ -262,17 +264,10 @@
   \resumeEntryEnd
    \resumeEntryStart
     \resumeEntryTD
-      {IBM Master the Mainframe}{2014-2019}
+      {IBM Master the Mainframe}{2014 - 2019}
     \resumeItemListStart
     \resumeItem {Completed Part 2 of IBM's Master the Mainframe where mainframe
     technologies such as zOS, JCL, and COBOl are explored each year}
-    \resumeItemListEnd
-  \resumeEntryEnd
-  \resumeEntryStart
-    \resumeEntryTD
-      {ACM Programming Contest Competitor}{2016}
-    \resumeItemListStart
-      \resumeItem {Received 2nd place at ACM's South Eastern Regional Programming Contest.}
     \resumeItemListEnd
   \resumeEntryEnd
 \end{document}
