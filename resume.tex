@@ -25,7 +25,7 @@
 \usepackage{xcolor}
 \usepackage{tabularx}
 
-%-------------------------------------------------- SETTINGS HERE --------------------------------------------------
+%;-------------------------------------------------- SETTINGS HERE --------------------------------------------------
 % Header settings
 \def \fullname {Hans Pistor}
 \def \subtitle {}
@@ -46,7 +46,7 @@
 \def \githubtext {/hans-pistor}
 
 
-\def \headertype {\doublecol} % \singlecol or \doublecol
+\def \headertype {\singlecol} % \singlecol or \doublecol
 
 % Misc settings
 \def \entryspacing {-0pt}
@@ -178,8 +178,8 @@
 
 %---------------------------------------------------- HEADER ----------------------------------------------------
 
-\headertype{\github}{\phone}{\email}{}{}{} % Set the order of items here
-\vspace{-10pt} % Set a negative value to push the body up, and the opposite
+\headertype{\github}{\phone}{\email}{\linkedin}{}{} % Set the order of items here
+\vspace{-30pt} % Set a negative value to push the body up, and the opposite
 
 
 %-------------------------------------------------- EXPERIENCE --------------------------------------------------
@@ -192,7 +192,7 @@
     \resumeItemListStart
       \resumeItem {Led a team in triaging defects in a distrbuted microsystems environment}
       \resumeItem {Spearheaded PGP implementation for secure communication with external entities (Visa, Mastercard)}
-      \resumeItem{Implemented many features across multiple microservices that were designed in a reactive manner, using Kafka for message passing \& Project Reactor for reactive programming}
+      \resumeItem{Implemented features across multiple reactive microservices using Kafka for communication}
     \resumeItemListEnd
   \resumeEntryEnd
 
@@ -202,7 +202,7 @@
       {Jr. Applications Developer }{Deland, Fl}
     \resumeItemListStart
       \resumeItem {Built and maintained Android application to provide 2FA for students and faculty using TOTP method to interface with CAS system.}
-      \resumeItem {Built various web forms using Java Spring MVC for faculty to resolve painpoints between departments (ex. Data Entry, Project Request)}
+      \resumeItem {Built various web forms using Java Spring MVC for faculty to resolve painpoints between departments (ex. Data Entry, IT Project Request)}
     \resumeItemListEnd
   \resumeEntryEnd
 
@@ -215,7 +215,7 @@
     \resumeEntryTD
       {Chupacabra}{Senior Research}
     \resumeItemListStart
-      \resumeItem{Given a list of vulnerabilities, developed a tool to generate a random network of systems that are vulnerable \& exploitable}
+      \resumeItem{Developed a tool to generate \& provision a network of systems that are assigned random vulnerablities to create a replayable mini-CTF. These VMs are all aware of each other \& some of the vulnerabilities require the previous VM to be vulnerable in a certain away (i.e. to allow a reverse shell for remote code execution, you need to be able to create the reverse shell on the target but also receive the data on the host)}
       \resumeItem{This tool was developed to assist teaching cybersecurity to students as it allows you to generate random ranges with unknown vulnerabilities}
     \resumeItemListEnd
   \resumeEntryEnd
@@ -224,7 +224,9 @@
     \resumeEntryTD
       {Security Audit}{CINF 385}
     \resumeItemListStart
-    \resumeItem{Audited Stetson's network security, discovering two vectors of attack: exploitable 3rd party camera firmware allowing unauthenticated access to video feed and SQL injection leading to admin access to main WordPress website}
+    \resumeItem{Audited Stetson's network security, discovering multiple vectors of attack}
+    \resumeItem{Found exploitable 3rd party camera firmware allowing unauthenticated access to video feed}
+    \resumeItem{Found SQL injection leading to admin access to main WordPress website used by teachers \& faculty to communicate with students \& host content}
     \resumeItemListEnd
   \resumeEntryEnd
 
@@ -241,20 +243,12 @@
 %-------------------------------------------------- PROGRAMMING SKILLS --------------------------------------------------
 \section{\faGears}{Skills}
  \resumeEntryStart
-  \resumeEntryS{Languages} {Java, Python, Python, Kotlin, SQL}
+  \resumeEntryS{Languages} {Java, Python, Rust, Kotlin, SQL}
   \resumeEntryS{Frameworks} {SpringBoot, Django}
-  \resumeEntryS{Technologies}{Reactive Programming, Kafka}
+  \resumeEntryS{Technologies}{Reactive Programming, Kafka, Distributed Systems}
  \resumeEntryEnd
  
  \section{\faGears}{Other}
- \resumeEntryStart
-    \resumeEntryTD
-      {Home Lab}{}
-    \resumeItemListStart
-    \resumeItem {VSphere Homelab for: Storage, Ad blocking, Active Directory,
-    Self Hosting [Plex | Minecraft]}
-    \resumeItemListEnd
-  \resumeEntryEnd
  \resumeEntryStart
     \resumeEntryTD
       {Collegiate Rowing Team}{2018 - 2020}
